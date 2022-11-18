@@ -14,5 +14,10 @@ https://www.youtube.com/watch?v=MOI9qBAAClo&t=728s
 - Flask Reuploaded
 https://pypi.org/project/Flask-Reuploaded/
 
-- ESP32 PINOUTS
+- ESP32 PINOUTS / HW
 https://docs.micropython.org/en/latest/esp32/quickref.html#hardware-i2c-bus
+https://lastminuteengineers.com/esp32-pinout-reference/
+https://docs.micropython.org/en/latest/esp32/quickref.html
+https://microcontrollerslab.com/esp32-pinout-use-gpio-pins/
+https://electronics.stackexchange.com/questions/583433/is-it-possible-to-use-two-i2c-interfaces-with-the-esp32-using-micropython
+
