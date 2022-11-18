@@ -1,9 +1,9 @@
 # esp32-picbooth
 
 ## What is this?
-Take a selfie and  upload it to your esp32 OLED screen.
+Take a selfie on your mobile phone and upload it to your esp32 OLED screen.
 
-Maybe your cat?
+Or maybe your sleeping cat?
 
 <img src="cat.jpg"  width="200"/>
 
