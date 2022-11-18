@@ -21,7 +21,7 @@ This can be a fun ice-breaker at  a social gathering like Thanksgiving or wherev
 
 ## Setup
 - In order to set this up you'll first install your esp32 on your wireless network and connect an OLED screen.
-For fun, in this project I have 2 OLED screens connected to the esp32 using the ssd1306 driver as well as the ssh1106  driver. 
+For fun, in this project I have 2 OLED screens connected to the esp32 using the ssd1306 driver as well as the sh1106  driver. 
 
 - Since the esp32 is not powerful enough to process images and does not have the pillow package you'll need another computer like a Raspberry Pi to process the images. This machine will be running Flask and will accept the uploaded images, process them and make available a text string that the esp32 will consume to be able to  display the image on its OLED.
 
@@ -31,7 +31,7 @@ I would strongly recommend reviewing the Brilliant Walk Through to understand th
 Lighting is EVERYTHING!
 
 ## References
-- ssh1106 driver
+- sh1106 driver
 
 https://github.com/robert-hh/SH1106/blob/master/sh1106.py
 
