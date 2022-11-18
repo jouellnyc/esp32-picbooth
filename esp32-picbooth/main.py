@@ -1,2 +1,0 @@
-import picbooth.network_setup
-import picbooth.picrunner_2_oleds
