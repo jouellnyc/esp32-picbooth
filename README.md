@@ -1,7 +1,12 @@
 # esp32-picbooth
 
 ## What is this?
-Take a selfie and  upload it to your esp32 OLED screen 
+Take a selfie and  upload it to your esp32 OLED screen.
+
+Maybe your cat?
+
+<img src="cat.jpg"  width="200"/>
+
 
 ## What is this (II)?
 It is also possible to run https://guvcview.sourceforge.net/ on a Raspberry Pi / Eee Pc like a real "Picture Booth" and have that image show on the esp32's OLED.
