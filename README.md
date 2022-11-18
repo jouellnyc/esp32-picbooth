@@ -25,7 +25,7 @@ For fun, in this project I have 2 OLED screens connected to the esp32 using the 
 
 - Since the esp32 is not powerful enough to process images and does not have the pillow package you'll need another computer like a Raspberry Pi to process the images. This machine will be running Flask/Flask Reuploaded and will accept the uploaded images, process them and make available a text string that the esp32 will consume to be able to  display the image on its OLED.
 
-I would strongly recommend reviewing the Brilliant Walk Through to understand the set up 
+I would recommend reviewing the Brilliant Walk Through for more in depth details.
 
 ## Hints
 Lighting is EVERYTHING!
