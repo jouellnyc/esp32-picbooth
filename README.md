@@ -33,7 +33,8 @@ I would recommend reviewing the Brilliant Walk Through for more in depth technic
 <img src="mobile.jpg"  width="200"/>
 
 ## Hints
-Lighting is EVERYTHING!
+- Lighting is EVERYTHING!
+- modify your DNS to point to something like 'upload' to find the upload server easily.
 
 ## References
 - sh1106 driver
