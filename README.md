@@ -11,3 +11,6 @@ https://gurgleapps.com/tools/image-to-code
 - Brilliant Walk Through
 https://www.youtube.com/watch?v=MOI9qBAAClo&t=728s
 
+- Flask Reuploaded
+https://pypi.org/project/Flask-Reuploaded/
+
