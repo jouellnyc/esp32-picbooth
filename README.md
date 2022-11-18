@@ -1,5 +1,25 @@
 # esp32-picbooth
 
+## What is this?
+Take a selfie and  upload it to your esp32 OLED screen 
+
+## Why?
+This can be a fun ice-breaker at  a social gathering likes Thanksgiving or  wherever humans gather.
+
+## Requirements
+- esp32
+- Raspberry Pi or equivalent like EEE PC running linux
+
+## Setup
+- In order to set this up you'll first install your esp32 on your wireless network and connect an OLED screen.
+For fun, in this project I have 2 OLED screens connected to the esp32 using the ssd1306 driver as well as the ssh1106  driver. 
+
+- Since the esp32 is not powerful enough to process images and does not have the pillow package you'll need another computer like a Raspberry Pi to process the images. This machine will be running Flask and will accept the uploaded images, process them and make available a text string that the esp32 will consume to be able to  display the image on its OLED.
+
+I would strongly recommend reviewing the Brilliant Walk Through to understand the set up 
+
+
+
 # References
 - ssh1106 driver
 
