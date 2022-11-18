@@ -3,6 +3,10 @@
 ## What is this?
 Take a selfie and  upload it to your esp32 OLED screen 
 
+## What is this (II)?
+It is also possible to run https://guvcview.sourceforge.net/ on a raspberry pi / eee pc like a real "Picture Booth" and have that image show on the esp32's OLED.
+That was the orignal intent. 
+
 ## Why?
 This can be a fun ice-breaker at  a social gathering likes Thanksgiving or  wherever humans gather.
 
