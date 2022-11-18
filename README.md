@@ -20,6 +20,7 @@ https://www.youtube.com/watch?v=MOI9qBAAClo&t=728s
 https://pypi.org/project/Flask-Reuploaded/
 
 - ESP32 PINOUTS / HW
+
 https://docs.micropython.org/en/latest/esp32/quickref.html#hardware-i2c-bus
 
 https://lastminuteengineers.com/esp32-pinout-reference/
