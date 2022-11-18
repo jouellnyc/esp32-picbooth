@@ -14,3 +14,5 @@ https://www.youtube.com/watch?v=MOI9qBAAClo&t=728s
 - Flask Reuploaded
 https://pypi.org/project/Flask-Reuploaded/
 
+- ESP32 PINOUTS
+https://docs.micropython.org/en/latest/esp32/quickref.html#hardware-i2c-bus
