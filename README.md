@@ -27,9 +27,10 @@ For fun, in this project I have 2 OLED screens connected to the esp32 using the 
 
 I would strongly recommend reviewing the Brilliant Walk Through to understand the set up 
 
+## Hints
+Lighting is EVERYTHING!
 
-
-# References
+## References
 - ssh1106 driver
 
 https://github.com/robert-hh/SH1106/blob/master/sh1106.py
