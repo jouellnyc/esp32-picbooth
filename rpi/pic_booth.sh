@@ -7,30 +7,40 @@ while [ 1 ] ; do
         FILE="my_photo.jpg"
         PC="/home/eepc"
         PB="/root/picbooth"
+        ILI3_ASPECT=256
+        OLED_ASPECT=128
 
-        A=$(ls -1 /root/picbooth/static/img/*jpg 2> /dev/null)
+
+        A=$(ls -1 /root/picbooth/static/img/*jp*g 2> /dev/null)
         if [[ ! -z $A ]]; then
            date
            echo "Moving $A to $PC/$FILE"
            mv $A $PC/$FILE
         fi
 
+
         if [[ -f $PC/$FILE ]]; then
 
-            echo "Moving $FILE ... "
+            echo "Moving $PC/$FILE to $PB"
             mv $PC/$FILE $PB
 
             cd $PB
 
-            echo "Resizing $FILE ... "
-            ./1_resize_aspect_works.py $FILE
-            echo "Converting  $FILE ... "
-            FILE="128.$FILE"
+            OFILE="${OLED_ASPECT}.$FILE"
+            IFILE="${ILI3_ASPECT}.$FILE"
+            echo "Shrinking $FILE to $OFILE and $IFILE"
+            ./1_resize_aspect_works.py $FILE $OLED_ASPECT
+            ./1_resize_aspect_works.py $FILE $ILI3_ASPECT
 
-            ./3_black_white.py $FILE
-            FILE="bw.$FILE"
+            BWFILE="bw.$OFILE"
+            echo "Processing $OFILE to $BWFILE"
+            ./2_black_white.py $OFILE
 
-            ./2_convert_to_frame_buffer.py $FILE
+            echo "Converting $BWFILE to frame buffer"
+            ./3_convert_to_frame_buffer.py $BWFILE
+
+            echo "Processing $IFILE for ili to raw format"
+            ./4_img2rgb565.py $IFILE
 
         else
 
@@ -38,9 +48,10 @@ while [ 1 ] ; do
 
         fi
 
-        echo "sleep for $SLEEP secs"
 
+
+
+        echo "sleep for $SLEEP secs"
         sleep $SLEEP
 
 done
-
