@@ -1,3 +1,4 @@
+
 import os
 from flask import Flask, flash, render_template, request
 from flask_uploads import IMAGES, UploadSet, configure_uploads
@@ -26,5 +27,4 @@ def picbooth():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
-
 
