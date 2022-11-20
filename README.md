@@ -5,7 +5,7 @@ Take a selfie on your mobile phone and upload it to your esp32 OLED screen.
 
 Or maybe your sleeping cat?
 
-<img src="cat.jpg"  width="200"/>
+<img src="images/cat.jpg"  width="200"/>
 
 
 
@@ -30,7 +30,7 @@ I would recommend reviewing the Brilliant Walk Through for more in depth technic
 
 ## Mobile Screen Shot
 
-<img src="mobile.jpg"  width="200"/>
+<img src="images/mobile.jpg"  width="200"/>
 
 ## Hints
 - Lighting is EVERYTHING!
