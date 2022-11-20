@@ -1,2 +1,2 @@
-import picbooth.network_setup
-import picbooth.picrunner_2_oleds
+import hardware.network_setup
+import picbooth.pic_runner
