@@ -31,6 +31,8 @@ For fun, in this project I have 2 OLED screens connected to the esp32 using the 
 
 I would recommend reviewing the Brilliant Walk Through for more in depth technichal details as they have already done the work.
 
+- Configs / Libraries shared in https://github.com/jouellnyc/mcconfigs
+
 ## Mobile Screen Shot
 
 <img src="images/mobile.jpg"  width="200"/>
