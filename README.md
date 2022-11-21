@@ -19,6 +19,7 @@ This can be a fun ice-breaker at  a social gathering like Thanksgiving or wherev
 ## Requirements
 - esp32
 - Raspberry Pi or equivalent like EEE PC running linux
+- An OLED - this works great - https://www.amazon.com/gp/product/B08KY21SR2/  - 0.96" OLED Display 128x64 Pixel SSD1306 I2C
 
 ## Setup
 - In order to set this up you'll first install your esp32 on your wireless network and connect an OLED screen.
