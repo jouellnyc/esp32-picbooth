@@ -1,4 +1,4 @@
-# esp32-picbooth
+# ESP32-picbooth
 
 ## What is this?
 Take a selfie on your mobile phone and upload it to your esp32 OLED screen.
