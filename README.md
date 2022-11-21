@@ -24,6 +24,8 @@ This can be a fun ice-breaker at  a social gathering like Thanksgiving or wherev
 - In order to set this up you'll first install your esp32 on your wireless network and connect an OLED screen.
 For fun, in this project I have 2 OLED screens connected to the esp32 using the ssd1306 driver as well as the sh1106  driver. 
 
+- This project also supports the - 320x240 SPI Serial ILI9341 - https://www.amazon.com/dp/B09XHJ9KRX - (set displayt in  pic_runner.py)
+
 - Since the esp32 is not powerful enough to process images and does not have the pillow package you'll need another computer like a Raspberry Pi to process the images. This machine will be running Flask/Flask Reuploaded and will accept the uploaded images, process them and make available (run pic_booth.sh to move them in the background). A text string is what the esp32 will consume to be able to  display the image on its OLED.
 
 I would recommend reviewing the Brilliant Walk Through for more in depth technichal details as they have already done the work.
