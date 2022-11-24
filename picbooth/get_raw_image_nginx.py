@@ -11,7 +11,7 @@ def get_file(filename='/256.my_photo.jpg.raw'):
         else:
             print("Request failed. Status: {}".format(r.status_code))
         r.close()
-    except:
+    except Exception as e:
         print(f"File Get failed. try again",e)
         pass
 
