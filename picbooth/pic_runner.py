@@ -5,7 +5,7 @@ import framebuf
 import base64
 import math
 
-my_sleep=3
+my_sleep=5
 
 def custom_to_buff(data):
     width = data[0]
@@ -17,7 +17,7 @@ def show_image(image, display):
     display.blit(image, 0, 0)
     display.show()
 
-displayt='2oleds'
+displayt='ili9341'
 
 import gc
 gc.collect()
