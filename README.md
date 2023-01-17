@@ -14,7 +14,7 @@ It is also possible to run https://guvcview.sourceforge.net/ on a Raspberry Pi /
 That was the orignal intent. 
 
 ## Why?
-This can be a fun ice-breaker at  a social gathering like Thanksgiving or wherever humans gather.
+This can be a fun ice-breaker at a holiday get together / party  like Thanksgiving or wherever humans gather.
 
 ## Requirements
 - esp32
