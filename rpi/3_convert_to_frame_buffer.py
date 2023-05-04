@@ -34,19 +34,15 @@ def imageToArray(path,verbose,invert):
     else:
         bw[bw < 128] = 0    # Black
         bw[bw >= 128] = 1 # White
-    data = asarray(bw)
-    return data
+    return asarray(bw)
 
 # 2d array of 0 & 1s turned into 2d array of bytes
 def bytesFromBits(bitArray):
     dataBytes = []
-    for i, line in enumerate(bitArray):
+    for line in bitArray:
         newLine = []
         for x in range(0, len(line), 8):
-            byte = 0
-            for n, bit in enumerate(line[x:x+8]):
-                if bit == 1:
-                    byte += 2**(7-n)
+            byte = sum(2**(7-n) for n, bit in enumerate(line[x:x+8]) if bit == 1)
             newLine.append(byte)
         dataBytes.append(newLine)
     return dataBytes
@@ -56,15 +52,14 @@ def customImageFormat(byteArray):
     height = len(byteArray)
     width = len(byteArray[0]) * 8
     byteList = [width,height]
-    for i, line in enumerate(byteArray):
-        for n, byte in enumerate(line):
-            byteList.append(byte)
+    for line in byteArray:
+        byteList.extend(iter(line))
     return bytearray(byteList)
 
 
 def doStuff(imagePath,verbose,invert):
     if verbose:
-        print('Converting '+imagePath)
+        print(f'Converting {imagePath}')
     data = imageToArray(imagePath,verbose,invert)
     np.set_printoptions(threshold=np.inf)
     dataBytes = bytesFromBits(data)

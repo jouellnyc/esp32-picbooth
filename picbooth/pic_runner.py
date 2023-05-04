@@ -10,8 +10,7 @@ my_sleep=5
 def custom_to_buff(data):
     width = data[0]
     height = data[1]
-    fbuff = framebuf.FrameBuffer(data[2:],width,height, framebuf.MONO_HLSB)
-    return fbuff
+    return framebuf.FrameBuffer(data[2:],width,height, framebuf.MONO_HLSB)
       
 def show_image(image, display):
     display.blit(image, 0, 0)
@@ -29,7 +28,7 @@ while True:
         
         from hardware.esp32_oled_2_8_inch import display
         from .get_raw_image_nginx import get_file, get_size
-               
+
         get_file()
         width,height = get_size()
         print(width,height)
@@ -39,18 +38,13 @@ while True:
         if height > 239:
             height=239
             print("height reduced to  239")
-            
+
         try:
             display.clear()
             display.draw_image('/256.my_photo.jpg.raw', 0, 0, width, height)
         except Exception as e:
             print(e)
-            pass
-        
-        print(f"sleeping {my_sleep}")
-        time.sleep(my_sleep)            
-    
-    else:    
+    else:
         try:
             ziva = str(urequests.get('http://192.168.0.94:5000/picbooth/').text)
             print('Got it!')
@@ -65,8 +59,9 @@ while True:
                 from hardware.oled_setup import oled1, oled2
                 show_image(ziva_image, oled1)
                 show_image(ziva_image, oled2)
-        print(f"sleeping {my_sleep}")
-        time.sleep(my_sleep)
+
+    print(f"sleeping {my_sleep}")
+    time.sleep(my_sleep)
     
     
     
