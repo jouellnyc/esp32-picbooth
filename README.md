@@ -52,6 +52,10 @@ https://github.com/gurgleapps/image-to-code
 
 https://gurgleapps.com/tools/image-to-code
 
+Free Online Image Editor - ResizePixel
+https://www.resizepixel.com/
+
+
 - Brilliant Walk Through
 
 https://www.youtube.com/watch?v=MOI9qBAAClo&t=728s
