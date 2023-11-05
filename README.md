@@ -14,7 +14,7 @@ It is also possible to run https://guvcview.sourceforge.net/ on a Raspberry Pi /
 That was the orignal intent. 
 
 ## Why?
-This can be a fun ice-breaker at  a social gathering like Thanksgiving or wherever humans gather.
+This can be a fun ice-breaker at a holiday get together / party  like Thanksgiving or wherever humans gather.
 
 ## Requirements
 - esp32
@@ -29,7 +29,7 @@ For fun, in this project I have 2 OLED screens connected to the esp32 using the 
 
 - Since the esp32 is not powerful enough to process images and does not have the pillow package you'll need another computer like a Raspberry Pi to process the images. This machine will be running Flask/Flask Reuploaded and will accept the uploaded images, process them and make available (run pic_booth.sh to move them in the background). A text string is what the esp32 will consume to be able to  display the image on its OLED.
 
-I would recommend reviewing the Brilliant Walk Through for more in depth technichal details as they have already done the work.
+I would recommend reviewing the Brilliant Walk Through for more in depth technical details as they have already done the work.
 
 - Configs / Libraries shared in https://github.com/jouellnyc/mcconfigs
 
